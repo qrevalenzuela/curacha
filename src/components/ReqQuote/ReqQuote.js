@@ -107,7 +107,6 @@ const ReqQuote = () => {
                   value={formData.productSelection}
                   onChange={handleChange}
                 >
-                  <option value="">Select a product</option>
                   <option value="Delivery Receipt">Delivery Receipt</option>
                   <option value="Official Receipt">Official Receipt</option>
                   <option value="Collection Receipt">Collection Receipt</option>
