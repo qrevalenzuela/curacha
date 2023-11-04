@@ -130,11 +130,24 @@
 }
 
 .product-details-tab {
+  background-color: #F5F5F5;
+  border: 1px solid #fa8072;
+  border-radius: 5px;
+  padding: 20px;
   margin-top: 20px;
-  border: 1px solid #ccc;
-  padding: 10px;
+}
+
+.product-details-tab label {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  display: flex;
+  justify-content: left;
 }
 
 .product-details-tab p {
+  font-size: 18px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: left;
 }
