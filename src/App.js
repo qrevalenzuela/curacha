@@ -1,16 +1,22 @@
-/* App.js */
-import React from 'react';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-import ReQuote from "./components/ReqQuote/ReqQuote";
+import ReqQuote from "./components/ReqQuote/ReqQuote";
+import Landing from "./components/Landing/Landing";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <ReQuote/>
-      <Footer/>
-      </div>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Landing />} />
+          <Route path="/req-quote" element={<ReqQuote />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </div>
   );
 }
 
